@@ -6,7 +6,8 @@ int main (int argc, const char *argv[])
     char source_name[MAX_FILE_NAME_LENGTH];
     char date[DATE_STRING_LENGTH];
     
-   /* Missing Code Here */
+    strcpy(source_name, argv[1]); //fetch name as argv[1]
+
     return 0;
 }
 FILE *init_lister(const char *name, char source_file_name[], char dte[])
