@@ -20,12 +20,15 @@ int main (int argc, const char *argv[])
 
 FILE *init_lister(const char *name, char source_file_name[], char date[])
 {
-    time_t timer;
-    FILE *file;
-    
-    
-    /* Missing Code Here */
-    return file;
+   time_t timer;
+	FILE *file;
+
+	file = fopen(name, "r");
+
+	strcpy(dte,ctime(&timer));
+	
+	return file;
+   
 }
 
 BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
