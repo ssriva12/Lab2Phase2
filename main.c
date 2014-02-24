@@ -15,21 +15,24 @@ int main (int argc, const char *argv[])
     }
     return 0;
 }
-FILE *init_lister(const char *name, char source_file_name[], char dte[])
+
+FILE *init_lister(const char *name, char source_file_name[], char date[])
 {
     time_t timer;
     FILE *file;
     
+    
     /* Missing Code Here */
     return file;
 }
+
 BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
 {
     char print_buffer[MAX_SOURCE_LINE_LENGTH + 9];
     char source_buffer[MAX_SOURCE_LINE_LENGTH];
     static int line_number = 0;
     
-    if (1) //This is missing a condition
+    if (fgets(source_buffer, src_file) != NULL) //This is missing a condition
     {
 		/*  Missing Code Here */
         return (TRUE);
