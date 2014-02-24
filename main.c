@@ -7,7 +7,7 @@ int main (int argc, const char *argv[])
     char date[DATE_STRING_LENGTH];
     
     strcpy(source_name, argv[1]); //fetch name as argv[1]
-    source_file = init_lister(source_name, source_name, date); //passing it to function init_lister
+    source_file = init_lister(source_name, source_name, date); //passing it to function init_lister, and copying name into source_name
     return 0;
 }
 FILE *init_lister(const char *name, char source_file_name[], char dte[])
